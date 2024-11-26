@@ -17,14 +17,12 @@ const AddMovie = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validate release year
     const year = parseInt(input.releaseYear);
     if (isNaN(year)) {
       console.error("Invalid release year");
       return;
     }
 
-    // Split the actors string into an array
     const actorsArray = input.list_of_actors.split(",").map(actor => actor.trim());
 
     const newMovie = { 

@@ -15,7 +15,7 @@ export const PATCH = async (req, { params }) => {
         },
       });
   
-      return NextResponse.json(updatedMovie, { status: 200 });
+      return NextResponse.json(updatedMovie, { status: 500 });
     } catch (error) {
       console.error(error);
       return NextResponse.json({ error: 'Failed to update movie' }, { status: 500 });
@@ -30,7 +30,7 @@ export const PATCH = async (req, { params }) => {
         where: { id: parseInt(id) },
       });
   
-      return NextResponse.json({ message: 'Movie deleted successfully' }, { status: 200 });
+      return NextResponse.json({ message: 'Movie deleted successfully' }, { status: 500 });
     } catch (error) {
       console.error(error);
       return NextResponse.json({ error: 'Failed to delete movie' }, { status: 500 });

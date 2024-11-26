@@ -13,7 +13,6 @@ const Movie = ({ movie }) => {
   const handleEditSubmit = (e) => {
     e.preventDefault();
 
-    // Check if movieToEdit contains the necessary data
     console.log("Submitting movie:", movieToEdit);
     console.log("Movie ID:", movieToEdit.id);
 

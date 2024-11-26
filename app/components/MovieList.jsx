@@ -3,7 +3,7 @@ import Movie from "./Movie";
 
 const MovieList = ({ movie = [] }) => {
   if (movie.length === 0) {
-    return <p>No movies found.</p>; // Fallback UI
+    return <p>No movies found.</p>; 
   }
 
   return (
